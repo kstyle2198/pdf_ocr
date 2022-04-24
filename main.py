@@ -23,7 +23,7 @@ def draw_boxes(image, bounds, color='red', width=4):
 def main():
 
     targets = []
-    folder_path = "./files/*.pdf"     # 특정 폴더에 있는 모든 파일 목록
+    folder_path = "./files/*.pdf"     # 특정 폴더에 있는 모든 파일 목록1
     lists = glob.glob(folder_path)
     # print(lists)
     for list in lists:
