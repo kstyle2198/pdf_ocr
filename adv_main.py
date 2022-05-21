@@ -45,11 +45,12 @@ def main(target):
         lst.extend(new_text)
         # print(lst)
 
-    path = "C:/my_develop2/pdf_ocr/files/"
-    my_source = path + target
+    src_path = "C:/my_develop2/pdf_ocr/files/"
+    curtime = time.strftime('%Y%m%d_%I%M%S%p', time.localtime())
+    my_source = src_path + target
     new_name = lst[0].replace("/", "")
-    my_dest = new_name + ".pdf"
-    my_dest = path + my_dest
+    result_path = "C:/my_develop2/pdf_ocr/results/"
+    my_dest = result_path + new_name + "_" + curtime+ ".pdf"
     os.rename(my_source, my_dest)
 
 
